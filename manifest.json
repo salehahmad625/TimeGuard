@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Time Guard",
+  "description": "Set screen time limits on websites to boost productivity!",
+  "version": "1.0",
+  "icons": {
+    "16": "timeguard.png",
+    "32": "timeguard.png",
+    "48": "timeguard.png",
+    "128": "timeguard.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "timeguard.png"
+  },
+  "permissions": ["activeTab", "storage", "tabs", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- <h1>Time Guard</h1> -->
+    <div class="container">
+      <!-- <h3>Daily Website Limits</h3> -->
+      <h2>Time Guard</h2>
+      <div class="table-container">
+        <div class="table-header">
+          <div class="header-cell">Website</div>
+          <div class="header-cell">Limit</div>
+          <div class="header-cell">Time Spent</div>
+          <div class="header-cell">Edit/Delete</div>
+        </div>
+        <div class="table-body"></div>
+        <div id="inputForm" style="display: none">
+          <input type="text" id="website" placeholder="Enter website" />
+          <input type="number" id="limit" placeholder="Enter limit (minutes)" />
+          <div class="buttons-container">
+            <a class="cancelButton">
+              <img src="red-x.png" />
+            </a>
+            <a class="submitButton">
+              <img src="green-check.png" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <button id="addBtn">+</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
